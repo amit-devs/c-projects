@@ -26,13 +26,17 @@ int main(){
 
         }
         case '/':{
-            c=a/b;
-            printf("Division of C=%d",c);
-            break;
-
+            if(b==0){
+                printf("Division not Possible!!");
+                break;
+            }else{
+                c=a/b;
+                printf("Division of C=%d",c);
+                break;
+            }
         }
         default:{
-            printf("Please enter a valid number");
+            printf("Please enter a valid number.");
             break;
 
         }
