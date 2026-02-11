@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>    
 int factorial(int n){
     int i, fact=1;
     
@@ -7,7 +7,7 @@ int factorial(int n){
         }
     return fact;
 }
-int main(){
+int main(){        // MAIN FUNCTION
     int n,result;
     printf("Enter a number:");
     scanf("%d",&n);
