@@ -1,16 +1,21 @@
 #include<stdio.h>
+int factorial(int n){
+    int i, fact=1;
+    
+        for(i=1;i<=n;i++){
+            fact=fact*i;
+        }
+    return fact;
+}
 int main(){
-    int n,i;
-    int fact=1;
+    int n,result;
     printf("Enter a number:");
     scanf("%d",&n);
     if(n<0){
         printf("Factorial is not defined for -ve number");
     }else{
-        for(i=1;i<=n;i++){
-            fact=fact*i;
-        }
-        printf("Factorial of %d = %d",n,fact);
+        result=factorial(n);
+        printf("Factorial of %d = %d",n,result);
     }
     return 0;
 }
